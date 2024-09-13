@@ -21,7 +21,7 @@ for(i = 0; i < len; i++) {
 
 Um exemplo de execução sobre a string `s = "Sim, MC202 e legal"` em que filtramos **sinais de pontuação e dígitos** seria o seguinte (para melhor visualização, colocamos hifens '-' no lugar de espaços ' '):
 
-$$\begin{array}{c|c|c|c} \hline
+$$\begin{array}{c|c|c|c}
 i &\text{Caso} &at\text{ depois da decisão} &\text{Estado de }s \\ \hline
 0 &s_{i} \text{ permanece} &1 &"\text{Sim,-MC202-e-legal}" \\ \hline
 1 &s_{i} \text{ permanece} &2 &"\text{Sim,-MC202-e-legal}" \\ \hline
