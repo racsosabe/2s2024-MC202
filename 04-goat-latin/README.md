@@ -21,27 +21,27 @@ for(i = 0; i < len; i++) {
 
 Um exemplo de execução sobre a string `s = "Sim, MC202 e legal"` em que filtramos **sinais de pontuação e dígitos** seria o seguinte (para melhor visualização, colocamos hifens '-' no lugar de espaços ' '):
 
-| **$i$** |      **Caso**      | **$at$ depois da decisão** |   **Estado de $s$**  |
-|:-------:|:------------------:|:--------------------------:|:--------------------:|
-|    0    |  $s_{i}$ permanece |              1             | "Sim,-MC202-e-legal" |
-|    1    |  $s_{i}$ permanece |              2             | "Sim,-MC202-e-legal" |
-|    2    |  $s_{i}$ permanece |              3             | "Sim,-MC202-e-legal" |
-|    3    | $s_{i}$ é removido |              3             | "Sim,-MC202-e-legal" |
-|    4    |  $s_{i}$ permanece |              4             | "Sim--MC202-e-legal" |
-|    5    |  $s_{i}$ permanece |              5             | "Sim-MMC202-e-legal" |
-|    6    |  $s_{i}$ permanece |              6             | "Sim-MCC202-e-legal" |
-|    7    | $s_{i}$ é removido |              6             | "Sim-MCC202-e-legal" |
-|    8    | $s_{i}$ é removido |              6             | "Sim-MCC202-e-legal" |
-|    9    | $s_{i}$ é removido |              6             | "Sim-MCC202-e-legal" |
-|    10   |  $s_{i}$ permanece |              7             | "Sim-MC-202-e-legal" |
-|    11   |  $s_{i}$ permanece |              8             | "Sim-MC-e02-e-legal" |
-|    12   |  $s_{i}$ permanece |              9             | "Sim-MC-e-2-e-legal" |
-|    13   |  $s_{i}$ permanece |             10             | "Sim-MC-e-l-e-legal" |
-|    14   |  $s_{i}$ permanece |             11             | "Sim-MC-e-lee-legal" |
-|    15   |  $s_{i}$ permanece |             12             | "Sim-MC-e-leg-legal" |
-|    16   |  $s_{i}$ permanece |             13             | "Sim-MC-e-legalegal" |
-|    17   |  $s_{i}$ permanece |             14             | "Sim-MC-e-legalegal" |
-
+$$\begin{array}{c|c|c|c}
+i &\text{Caso} &at\text{ depois da decisão} &\text{Estado de }s \\ \hline
+0 &s_{i} \text{ permanece} &1 &"\text{Sim,-MC202-e-legal}" \\ \hline
+1 &s_{i} \text{ permanece} &2 &"\text{Sim,-MC202-e-legal}" \\ \hline
+2 &s_{i} \text{ permanece} &3 &"\text{Sim,-MC202-e-legal}" \\ \hline
+3 &s_{i} \text{ é removido} &3 &"\text{Sim,-MC202-e-legal}" \\ \hline
+4 &s_{i} \text{ permanece} &4 &"\text{Sim-}\text{-MC202-e-legal}" \\ \hline
+5 &s_{i} \text{ permanece} &5 &"\text{Sim-MMC202-e-legal}" \\ \hline
+6 &s_{i} \text{ permanece} &6 &"\text{Sim-MCC202-e-legal}" \\ \hline
+7 &s_{i} \text{ é removido} &6 &"\text{Sim-MCC202-e-legal}" \\ \hline
+8 &s_{i} \text{ é removido} &6 &"\text{Sim-MCC202-e-legal}" \\ \hline
+9 &s_{i} \text{ é removido} &6 &"\text{Sim-MCC202-e-legal}" \\ \hline
+10 &s_{i} \text{ permanece} &7 &"\text{Sim-MC-202-e-legal}" \\ \hline
+11 &s_{i} \text{ permanece} &8 &"\text{Sim-MC-e02-e-legal}" \\ \hline
+12 &s_{i} \text{ permanece} &9 &"\text{Sim-MC-e-2-e-legal}" \\ \hline
+13 &s_{i} \text{ permanece} &10 &"\text{Sim-MC-e-l-e-legal}" \\ \hline
+14 &s_{i} \text{ permanece} &11 &"\text{Sim-MC-e-lee-legal}" \\ \hline
+15 &s_{i} \text{ permanece} &12 &"\text{Sim-MC-e-leg-legal}" \\ \hline
+16 &s_{i} \text{ permanece} &13 &"\text{Sim-MC-e-legalegal}" \\ \hline
+17 &s_{i} \text{ permanece} &14 &"\text{Sim-MC-e-legalegal}" \\ \hline
+\end{array} $$
 
 Podemos notar que o valor final de $j = 14$ é o comprimento da string após filtrar os caracteres desejados, então podemos ignorar os seguintes.
 

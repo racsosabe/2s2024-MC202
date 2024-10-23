@@ -1,0 +1,41 @@
+create 16 2.0
+push 690.9
+get 0
+set 0 172.6
+pop
+push 67.5
+get 0
+push 58.9
+inject 393.6
+push 42.9
+set 1 919.4
+inject 324.5
+set 0 526.1
+get 3
+inject 996.1
+get 2
+pop
+eject
+push 895.2
+pop
+set 2 364.3
+push 808.6
+inject 788.4
+set 1 651.4
+get 0
+eject
+eject
+push 226.6
+push 539.5
+pop
+set 1 378.7
+push 902.7
+set 1 652.6
+set 4 865.9
+pop
+set 2 729.1
+push 771.1
+eject
+eject
+get 3
+exit
